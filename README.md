@@ -22,7 +22,7 @@
 * Enjoy and feel free to modify the theme in every way you want to.
 
 ## Compile style.styl ##
-Install Stylus (of course before you need to install [NodeJS](http://nodejs.org))
+Install Stylus (Before you need to install [NodeJS](http://nodejs.org))
 
 	npm install -g stylus
 
@@ -36,12 +36,13 @@ Install [Cairo Graphics Library](http://cairographics.org/download/), them insta
 
 Inside the template folder run
 
-	$ stylus -w -u nib style.styl
+	stylus -w -u nib style.styl
 
 Also you can use (if you want a compress CSS file)
 
-	$ stylus -w -c -u nib style.styl
+	stylus -w -c -u nib style.styl
 
+This will out a file named `style.css`.
 
 ## For the Future ##
 On the **upcomming version** in looking forward to add [Facebook Timelime](http://facebook.com/about/timeline) support, this will allow to post on users activity page items like:
