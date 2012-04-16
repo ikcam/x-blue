@@ -387,6 +387,10 @@ msgstr "Enlaces de Sesi&oacute;n y Administraci&oacute;n (Sandbox)"
 msgid "RSS links for both posts and comments (Sandbox)"
 msgstr "Canales RSS para entradas y para comentarios (Sandbox)"
 
+#: functions.php:589
+msgid "Keep reading"
+msgstr "Continuar leyendo"
+
 #: header.php:8
 #: sidebar.php:49
 #, php-format

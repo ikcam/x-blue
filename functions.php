@@ -586,7 +586,7 @@ function sandbox_excerpt($text) {
 		$text = str_replace(']]>', ']]&gt;', $text);
 		$text = strip_tags($text);
 		$excerpt_length = apply_filters('excerpt_length', 80); // Word limit
-		$excerpt_more = apply_filters('excerpt_more', ' ' . '... <div class="read-more"><a href="'. get_permalink($post->ID) . '">Continuar leyendo <span class="meta-nav">&raquo;</span></a></div>'); // "Read more" link
+		$excerpt_more = apply_filters('excerpt_more', ' ' . '... <div class="read-more"><a href="'. get_permalink($post->ID) . '">' . __( 'Keep reading', 'sandbox' ) . '<span class="meta-nav">&raquo;</span></a></div>'); // "Read more" link
 		$words = preg_split("/[\n\r\t ]+/", $text, $excerpt_length + 1, PREG_SPLIT_NO_EMPTY);
 		if ( count($words) > $excerpt_length ) {
 			array_pop($words);
@@ -598,4 +598,7 @@ function sandbox_excerpt($text) {
 	}
 	return apply_filters('sandbox_excerpt', $text, $raw_excerpt);
 }
+
+remove_filter('get_the_excerpt', 'wp_trim_excerpt');
+add_filter( 'get_the_excerpt', 'sandbox_excerpt');
 ?>
