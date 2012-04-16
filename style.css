@@ -40,7 +40,7 @@ section#container section#content h2.entry-title a,section#container section#con
 section#container section#content h2.entry-title a:hover,section#container section#content h2.page-title a:hover,section#container section#content h3.entry-title a:hover{color:#39f;text-decoration:underline}
 section#container section#content h2.page-title{margin-bottom:10px;text-align:right}
 section#container section#content div.entry-content{font-size:.9em;line-height:150%;padding:10px;}
-section#container section#content div.entry-content h1,section#container section#content div.entry-content h2,section#container section#content div.entry-content h3,section#container section#content div.entry-content h4,section#container section#content div.entry-content h5,section#container section#content div.entry-content h6{color:#000;font-family:Georgia,'Times New Roman';margin-bottom:5px}
+section#container section#content div.entry-content h1,section#container section#content div.entry-content h2,section#container section#content div.entry-content h3,section#container section#content div.entry-content h4,section#container section#content div.entry-content h5,section#container section#content div.entry-content h6{color:#000;font-family:Georgia,'Times New Roman';font-weight:bold;margin-bottom:5px}
 section#container section#content div.entry-content h1{font-size:1.6em}
 section#container section#content div.entry-content h2{font-size:1.5em}
 section#container section#content div.entry-content h3{font-size:1.4em}
