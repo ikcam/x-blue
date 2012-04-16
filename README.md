@@ -22,27 +22,23 @@
 * Enjoy and feel free to modify the theme in every way you want to.
 
 ## Compile style.styl ##
-To compile the `style.styl` file you need this:
-
-* Install NodeJS on your computer (**MacOS** or **Linux** required if you are going to compile the gradients)
-* Install Stylus
+Install Stylus (of course before you need to install [NodeJS](http://nodejs.org))
 
 	npm install -g stylus
 
-* Install Nib
+Install Nib
 
 	npm install -g nib
 
-* Install [Cairo Graphics Library](http://cairographics.org/download/)
-* Install node-canvas
+Install [Cairo Graphics Library](http://cairographics.org/download/), them install **node-canvas**
 
 	npm install -g canvas
 
-* Inside the template folder run
+Inside the template folder run
 
 	$ stylus -w -u nib style.styl
 
-* Also you can use (if you want a compress CSS file)
+Also you can use (if you want a compress CSS file)
 
 	$ stylus -w -c -u nib style.styl
 
