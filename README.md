@@ -1,14 +1,15 @@
 # X-Blue WordPress Theme #
 **X-Blue** is a [WordPress](http://www.wordpress.org/) Theme based on my customize version of [SandBox in HTML5](https://github.com/ikcam/Sandbox-HTML5), wich I've improved by adding:
 
-* Facebook Open Graph and Google+
+* Facebook Open Graph and Google+.
 	* Automatically gets a post image and use it as **image** for Facebook or Google+.
 	* Use the post excerpt of the post as **description**.
 * Adds **Twitter**, **Google+** and **Facebook** share button on every post.
-* All gradients are created by [Stylus](https://github.com/LearnBoost/stylus) using [Nib](https://github.com/visionmedia/nib) and [node-canvas](https://github.com/learnboost/node-canvas)
-	* **ALERT** You **WON'T** be able to re-compile the ´style.styl´ file on **Windows**, you **ONLY** can do it on **MacOS** or **Linux** because you require [cairo graphics library](http://cairographics.org/download/)
-* Order lists on the sidebar looks great (**use a order list only of 5 elements**)
-* Uses `wordpress.styl` from [stylus-boilerplate](https://github.com/neojp/stylus-boilerplate)
+* All gradients are created by [Stylus](https://github.com/LearnBoost/stylus) using [Nib](https://github.com/visionmedia/nib) and [node-canvas](https://github.com/learnboost/node-canvas).
+	* **ALERT** You **WON'T** be able to re-compile the ´style.styl´ file on **Windows**, you **ONLY** can do it on **MacOS** or **Linux** because you require [cairo graphics library](http://cairographics.org/download/).
+* Order lists on the sidebar looks great (**use a order list only of 5 elements**).
+* Uses `wordpress.styl` from [stylus-boilerplate](https://github.com/neojp/stylus-boilerplate).
+* Cumstom excerpt that adds a thumb image for every post.
 
 ## Installation ##
 * You need to download the theme and upload it into your `wp-content/themes` folder
