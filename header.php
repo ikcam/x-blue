@@ -6,7 +6,7 @@
 	<!-- Facebook Open Graph -->
 	<meta property="og:site_name" content="<?php bloginfo('name') ?>" />
 	<meta property="og:type" content="website" />
-	<meta property="fb:app_id" content="185302781504837" /><!-- Your Custom User ID or App ID -->
+	<meta property="fb:app_id" content="" /><!-- Your Custom User ID or App ID -->
 <?php if( is_single() ) { ?>
 	<!-- Is Single -->
 	<!-- Facebook Open Graph -->
@@ -58,17 +58,6 @@
 	<script>
 		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 	</script><!-- Twitter Script -->
-	<script>
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-3133670-9']);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-	</script><!-- Google Analytics -->
 <?php wp_head() // For plugins ?>
 </head>
 
@@ -79,7 +68,7 @@
 	var js, fjs = d.getElementsByTagName(s)[0];
 	if (d.getElementById(id)) return;
 	js = d.createElement(s); js.id = id;
-	js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=185302781504837";
+	js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=";
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 </script>
