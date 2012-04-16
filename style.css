@@ -39,7 +39,7 @@ section#container section#content h2.entry-title,section#container section#conte
 section#container section#content h2.entry-title a,section#container section#content h2.page-title a,section#container section#content h3.entry-title a{color:#369;}
 section#container section#content h2.entry-title a:hover,section#container section#content h2.page-title a:hover,section#container section#content h3.entry-title a:hover{color:#39f;text-decoration:underline}
 section#container section#content h2.page-title{margin-bottom:10px;text-align:right}
-section#container section#content div.entry-content{font-size:.9em;line-height:120%;padding:10px;}
+section#container section#content div.entry-content{font-size:.9em;line-height:150%;padding:10px;}
 section#container section#content div.entry-content h1,section#container section#content div.entry-content h2,section#container section#content div.entry-content h3,section#container section#content div.entry-content h4,section#container section#content div.entry-content h5,section#container section#content div.entry-content h6{color:#000;font-family:Georgia,'Times New Roman';margin-bottom:5px}
 section#container section#content div.entry-content h1{font-size:1.6em}
 section#container section#content div.entry-content h2{font-size:1.5em}
@@ -79,11 +79,11 @@ section#container section#content nav.navigation div.nav-previous,section#contai
 section#container section#content nav.navigation div.nav-previous a,section#container section#content nav.navigation div.nav-next a{background:#39f;border-bottom:2px solid #ccc;color:#fff;display:inline-block;padding:3px 8px;text-decoration:none;}
 section#container section#content nav.navigation div.nav-previous a:hover,section#container section#content nav.navigation div.nav-next a:hover{border-bottom:2px solid #999}
 section#container section#content nav.navigation div.nav-previous{float:left;}
-section#container section#content nav.navigation div.nav-previous a{border-left:2px solid #ccc;-moz-border-radius-topleft:5px;-webkit-border-top-left-radius:5px;-o-border-top-left-radius:5px;-ms-border-top-left-radius:5px;border-top-left-radius:5px;-moz-border-radius-bottomleft:5px;-webkit-border-bottom-left-radius:5px;-o-border-bottom-left-radius:5px;-ms-border-bottom-left-radius:5px;border-bottom-left-radius:5px;}
-section#container section#content nav.navigation div.nav-previous a:hover{border-left:2px solid #999}
+section#container section#content nav.navigation div.nav-previous a{-moz-border-radius-topleft:5px;-webkit-border-top-left-radius:5px;-o-border-top-left-radius:5px;-ms-border-top-left-radius:5px;border-top-left-radius:5px;-moz-border-radius-bottomleft:5px;-webkit-border-bottom-left-radius:5px;-o-border-bottom-left-radius:5px;-ms-border-bottom-left-radius:5px;border-bottom-left-radius:5px;border-right:2px solid #ccc;}
+section#container section#content nav.navigation div.nav-previous a:hover{border-right:2px solid #999}
 section#container section#content nav.navigation div.nav-next{float:right;}
-section#container section#content nav.navigation div.nav-next a{border-right:2px solid #ccc;-moz-border-radius-topright:5px;-webkit-border-top-right-radius:5px;-o-border-top-right-radius:5px;-ms-border-top-right-radius:5px;border-top-right-radius:5px;-moz-border-radius-bottomright:5px;-webkit-border-bottom-right-radius:5px;-o-border-bottom-right-radius:5px;-ms-border-bottom-right-radius:5px;border-bottom-right-radius:5px;}
-section#container section#content nav.navigation div.nav-next a:hover{border-right:2px solid #999}
+section#container section#content nav.navigation div.nav-next a{border-left:2px solid #ccc;-moz-border-radius-topright:5px;-webkit-border-top-right-radius:5px;-o-border-top-right-radius:5px;-ms-border-top-right-radius:5px;border-top-right-radius:5px;-moz-border-radius-bottomright:5px;-webkit-border-bottom-right-radius:5px;-o-border-bottom-right-radius:5px;-ms-border-bottom-right-radius:5px;border-bottom-right-radius:5px;}
+section#container section#content nav.navigation div.nav-next a:hover{border-left:2px solid #999}
 section#container section#content section#comments{background:#eee;border-bottom:2px solid #ccc;border-right:2px solid #ccc;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;margin-bottom:10px;padding:10px 20px;}
 section#container section#content section#comments h3{color:#369;font-family:Georgia,'Times New Roman';font-size:1.5em;font-style:italic;margin-bottom:5px}
 section#container section#content section#comments section#comments-list{margin-bottom:20px;}
@@ -105,7 +105,7 @@ section#container section#content section#comments section#respond div.formconta
 section#container section#content section#comments section#respond div.formcontainer input[type="submit"]:hover{border-bottom:2px solid #333;border-right:2px solid #333;cursor:pointer}
 section#container section#content section#comments section#respond div.formcontainer input[type="submit"]:active{background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAYCAIAAAC0rgCNAAAABmJLR0QA/wD/AP+gvaeTAAAAIUlEQVQImWMwTpvFxMDMysTAxALFyGwoZkYXY8UjhyIPAJOjAfX6uC33AAAAAElFTkSuQmCC')}
 aside.sidebar{float:right;font-size:.9em;width:310px;overflow:hidden;}
-aside.sidebar > ul > li{line-height:120%;margin-bottom:20px;}
+aside.sidebar > ul > li{line-height:150%;margin-bottom:20px;}
 aside.sidebar > ul > li:after{clear:both;content:'.';display:block;height:0;visibility:hidden}
 aside.sidebar > ul > li > h3{border-bottom:1px dotted #ccc;color:#369;font-family:Georgia,'Times New Roman';font-size:1.6em;font-style:italic;margin-bottom:5px;padding-bottom:3px}
 aside.sidebar > ul > li ul{list-style:disc;padding:0 0 0 20px;}
