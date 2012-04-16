@@ -3,11 +3,6 @@
 	<section id="container">
 		<section id="content">
 
-			<nav id="nav-above" class="navigation">
-				<div class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> Older posts', 'sandbox' )) ?></div>
-				<div class="nav-next"><?php previous_posts_link(__( 'Newer posts <span class="meta-nav">&raquo;</span>', 'sandbox' )) ?></div>
-			</nav>
-
 <?php while ( have_posts() ) : the_post() ?>
 
 			<article id="post-<?php the_ID() ?>" class="<?php sandbox_post_class() ?>">
