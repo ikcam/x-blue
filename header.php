@@ -83,8 +83,8 @@
 		</div>
 
 		<div id="rss">
-			<a href="<?php bloginfo('rss2_url') ?>" rel="alternative">Entradas</a>
-			<a href="<?php bloginfo('comments_rss2_url') ?>" rel="alternative">Comentarios</a>
+			<a href="<?php bloginfo('rss2_url') ?>" rel="alternative"><?php _e( 'Entries', 'sandbox' ) ?></a>
+			<a href="<?php bloginfo('comments_rss2_url') ?>" rel="alternative"><?php _e( 'Comments', 'sandbox' ) ?></a>
 		</div>
 	</section>
 </section>
@@ -99,7 +99,7 @@
 		<?php sandbox_globalnav() ?>
 		<form method="get" id="search" action="<?php echo get_settings('home'); ?>">
 			<input class="text" id="s" name="s" type="text" value="<?php the_search_query() ?>" tabindex="1" />
-			<input class="button" type="submit" value="Buscar" tabindex="2" />
+			<input class="button" type="submit" value="<?php _e( 'Find', 'sandbox' ) ?>" tabindex="2" />
 		</form>
 	</section><!-- #access -->
 
