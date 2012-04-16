@@ -75,6 +75,7 @@ section#container section#content span.comments-link,section#container section#c
 section#container section#content span.edit-link{background:url("images/sprite.png") 0 -300px no-repeat;margin-right:10px}
 section#container section#content nav.navigation{padding:10px 0;}
 section#container section#content nav.navigation:after{clear:both;content:'.';display:block;height:0;visibility:hidden}
+section#container section#content nav.navigation div.nav-previous,section#container section#content nav.navigation div.nav-next{font-size:.9em;max-width:40%;}
 section#container section#content nav.navigation div.nav-previous a,section#container section#content nav.navigation div.nav-next a{background:#39f;border-bottom:2px solid #ccc;color:#fff;display:inline-block;padding:3px 8px;text-decoration:none;}
 section#container section#content nav.navigation div.nav-previous a:hover,section#container section#content nav.navigation div.nav-next a:hover{border-bottom:2px solid #999}
 section#container section#content nav.navigation div.nav-previous{float:left;}
