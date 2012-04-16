@@ -1,0 +1,637 @@
+@import 'nib'
+
+global-reset()
+reset-html5()
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700')
+
+body
+	color #474747
+	font-family 'Open Sans', sans-serif
+	font-size 14px
+	font-weight normal
+
+em
+	font-style italic
+
+b, strong
+	font-weight bold
+
+a
+	color #39F
+	text-decoration none
+
+	&:hover
+		color #369
+		text-decoration underline
+
+section#nav-top
+	background #333
+	border-bottom 1px solid #999
+	color #FFF
+	font-size .8em
+	height 20px
+	line-height 20px
+	margin-bottom 10px
+	width 100%
+
+	a
+		color #FFF
+
+	div#breadcrumb
+		float left
+
+	div#rss
+		float right
+
+		a
+			background url('images/sprite.png') 0 -320px no-repeat
+			display inline-block
+			margin-right 10px
+			padding 0 0 0 20px
+
+header#header
+	margin-bottom 10px
+
+section#access
+	background url('images/sprite.png') 0 0 repeat-x
+	margin-bottom 10px
+
+	nav#menu
+		display inline-block
+
+		> ul
+
+			> li
+				border-top #39F solid 3px
+				display inline-block
+				margin-right 5px
+				padding-top 5px
+
+				> a
+					background linear-gradient-image(22px, #39F, #369)
+					background linear-gradient(top, #39F, #369)
+					border-radius bottom 5px
+					color #FFF
+					display block
+					font-weight bold
+					padding 4px 8px
+
+				> ul
+					display none
+
+				&:hover
+					border-top #369 solid 3px
+
+					> a
+						background linear-gradient-image(22px, #369, #39F)
+						background linear-gradient(top, #369, #39F)
+						text-decoration none
+
+	form#search
+		float right
+		padding-top 8px
+
+		input[type="text"]
+			border solid 1px #CCC
+			border-radius 5px
+			box-shadow inset 0px 0px 8px rgba(0,0,0,0.3)
+			height 14px
+			margin 0 5px 0 0
+			padding 3px 5px
+			transition all .3s ease-in-out
+			width 100px
+
+			&:focus
+				border solid 1px #474747
+				width 150px
+
+		input[type="submit"]
+			background linear-gradient-image(22px, #39F, #369)
+			background linear-gradient(top, #39F, #369)
+			border none
+			border-radius 5px
+			color #FFF
+			font-size 1.02em
+			font-weight bold
+			margin 0
+			padding 2px 20px 3px
+
+			&:hover
+				background linear-gradient-image(22px, #369, #39F)
+				background linear-gradient(top, #369, #39F)
+
+
+
+section#wrapper
+	margin 0 auto
+	width 960px
+
+section#container
+	float left
+	margin 0 -350px 20px 0
+	width 100%
+
+	section#content
+		margin 0 350px 0 0
+
+		article.post
+			margin-bottom 20px
+			position relative
+
+
+		div.entry-date
+			color #FFF
+			font-family Georgia, 'Times New Roman'
+			font-size 1.2em
+			padding 10px
+			position absolute
+			right 610px
+			text-align center
+			text-transform capitalize
+			top 10px
+
+			> div
+				background linear-gradient(top, #39F, #369)
+				border-radius left 7px
+				display inline-block
+				padding 5px 10px
+
+		h2.entry-title, h2.page-title, h3.entry-title
+			color #369
+			font-family Georgia, 'Times New Roman'
+			font-size 1.8em
+
+			a
+				color #369
+
+				&:hover
+					color #39F
+					text-decoration none
+
+		h2.page-title
+			margin-bottom 10px
+			text-align right
+
+		div.entry-content
+			font-size .9em
+			line-height 120%
+			padding 10px
+
+			h1, h2, h3, h4, h5, h6
+				color #000
+				font-family Georgia, 'Times New Roman'
+				margin-bottom 5px
+
+			h1
+				font-size 1.6em
+
+			h2
+				font-size 1.5em
+
+			h3
+				font-size 1.4em
+
+			h4
+				font-size 1.3em
+
+			h5
+				font-size 1.2em
+
+			h6
+				font-size 1.1em
+
+			p
+				margin-bottom 10px
+
+			ul
+				list-style disc
+				margin-bottom 10px
+				padding 0 0 0 20px
+
+				ul
+					list-style circle
+
+			.alignnone
+				float none
+				margin 5px 20px 20px 0
+
+			.aligncenter
+				text-align center
+				margin 5px auto
+
+				img&
+					display block
+
+			.alignleft 
+				float left
+				margin 5px 20px 20px 0
+
+			.alignright 
+				float right
+				margin 5px 0 20px 20px
+
+			.alignjustify 
+				text-align justify
+
+			.wp-caption
+				background #fff
+				border 1px solid #f0f0f0
+				max-width 96%
+				padding 5px 3px 10px
+				text-align center
+
+				img
+					border 0
+					height auto
+					margin 0
+					max-width 98.5%
+					padding 0
+					width auto
+
+				p.wp-caption-text
+					font-size 11px
+					line-height 17px
+					margin 0
+					padding 0 4px 5px
+
+		div.entry-meta, div.entry-meta-top
+			color #666
+			font-size .85em
+			line-height 20px
+			padding 2px 10px
+
+		div.entry-meta
+			background #EEE
+			border-bottom solid 2px #CCC
+			border-right solid 2px #CCC
+			border-radius 5px
+
+			&:hover
+				border-bottom solid 2px #AAA
+				border-right solid 2px #AAA
+
+			> div.social-buttons
+				display inline-block
+
+				> div
+					display inline-block
+					height 20px
+					vertical-align middle
+
+			> div.right
+				float right
+				height 20px
+
+
+		span.author, span.cat-links, span.comments-link, span.edit-link, a.comment-link
+			display inline-block
+			padding-left 20px
+
+		span.cat-links
+			background url('images/sprite.png') 0 -220px no-repeat
+
+		span.tag-links
+			display block
+			font-weight bold
+			font-size .8em
+
+			a
+				background #666
+				border-left solid 3px #999
+				color #FFF
+				display inline-block
+				font-weight normal
+				padding 2px 3px
+				text-decoration none
+
+				&:hover
+					background #999
+					border-left solid 3px #CCC
+
+
+		span.author
+			background url('images/sprite.png') 0 -260px no-repeat
+			margin-right 10px
+
+		span.comments-link, a.comment-link
+			background url('images/sprite.png') 0 -280px no-repeat
+
+		span.edit-link
+			background url('images/sprite.png') 0 -300px no-repeat
+			margin-right 10px
+
+		nav.navigation
+			padding 10px 0
+
+			&:after
+				clear both
+				content '.'
+				display block
+				height 0
+				visibility hidden
+
+			div.nav-previous, div.nav-next
+				a
+					background #39F
+					border-bottom 2px solid #CCC
+					color #FFF
+					display inline-block
+					padding 3px 8px
+
+					&:hover
+						border-bottom 2px solid #999
+
+			div.nav-previous
+				float left
+
+				a
+					border-left 2px solid #CCC
+					border-radius left 5px
+
+					&:hover
+						border-right 2px solid #999
+
+			div.nav-next
+				float right
+
+				a
+					border-right 2px solid #CCC
+					border-radius right 5px
+
+					&:hover
+						border-right 2px solid #999
+
+
+		section#comments
+			background #EEE
+			border-bottom 2px solid #CCC
+			border-right 2px solid #CCC
+			border-radius 5px
+			margin-bottom 10px
+			padding 10px 20px
+
+			h3
+				color #369
+				font-family Georgia, 'Times New Roman'
+				font-size 1.5em
+				font-style italic
+				margin-bottom 5px
+
+
+			section#comments-list
+				margin-bottom 20px
+
+				> ol
+					> li
+						margin-bottom 10px
+
+						&:nth-child(2), &:nth-child(4), &:nth-child(6), &:nth-child(8), &:nth-child(10)
+							background #FFF
+
+						div.comment-author
+
+							img
+								float left
+								margin-right 5px
+
+							&:after
+								content '.'
+								clear both
+								display block
+								height 0
+								visibility hidden
+
+							span.comment-meta
+								font-size .85em
+
+				p
+					color #666
+					font-size .85em
+					padding 5px 10px
+
+			section#respond
+				text-align center
+
+				div.formcontainer
+					font-size .85em
+
+					p#comment-notes
+						background #FF9
+						border 2px solid #CCC
+						border-radius 5px
+						display inline-block
+						font-weight bold
+						margin-bottom 10px
+						padding 5px 10px
+
+					label
+						font-weight bold
+
+					div.name-box, div.email-box, div.url-box
+						display inline-block
+						margin-bottom 10px
+
+
+						input[type="text"]
+							border none
+							border-radius 5px
+							box-shadow inset 0px 0px 5px rgba(0,0,0,0.5)
+							transition all .3s ease-in-out
+							padding 3px 5px
+							width 100px
+
+							&:focus
+								width 150px
+
+					textarea
+						border none
+						border-radius 5px
+						box-shadow inset 0px 0px 5px rgba(0,0,0,0.5)
+						margin-bottom 10px
+
+
+					input[type="submit"]
+						background linear-gradient-image(24px, #39F, #369)
+						border-bottom 2px solid #999
+						border-right 2px solid #999
+						border-top none
+						border-left none
+						border-radius 5px
+						color #FFF
+						font-size 1.1em
+						font-weight bold
+						padding 3px 10px
+
+						&:hover
+							border-bottom 2px solid #333
+							border-right 2px solid #333
+							cursor pointer
+
+						&:active
+							background linear-gradient-image(24px, #369, #39F)
+
+
+
+aside.sidebar
+	float right
+	font-size .9em
+	width 310px
+	overflow hidden
+
+	> ul
+		> li
+			line-height 120%
+			margin-bottom 20px
+
+			&:after
+				clear both
+				content '.'
+				display block
+				height 0
+				visibility hidden
+
+			> h3
+				border-bottom 1px dotted #CCC
+				color #369
+				font-family Georgia, 'Times New Roman'
+				font-size 1.6em
+				font-style italic
+				margin-bottom 5px
+				padding-bottom 3px
+
+			ul
+				list-style disc
+				padding 0 0 0 20px
+
+				li.cat-item
+					float left
+					width 130px
+					clear none
+
+				ul
+					list-style circle
+
+
+			&#social
+				div.fb-like, div.twitter, div.googleplus, div.email
+					border-left solid 1px #D4D4D4
+					border-right solid 1px #D4D4D4
+					border-bottom solid 1px #D4D4D4
+					padding 5px
+
+				div.fb-like
+					background #EEE
+					border-top solid 1px #D4D4D4
+
+				div.googleplus
+					background #EEE
+
+					div.left, div.text
+						display inline-block
+						font-size .85em
+						vertical-align middle
+
+				div.email
+					text-align center
+
+					form
+						margin-bottom 10px
+
+						input[type="submit"]
+							background #39F
+							border-radius right 5px
+							border none
+							border-right solid 2px #CCC
+							border-bottom solid 2px #CCC
+							color #FFF
+							font-weight bold
+
+							&:hover
+								border none
+								border-right solid 2px #999
+								border-bottom solid 2px #999
+
+					a
+						border solid 1px #CCC 
+						display inline-block
+						color #666
+						padding 3px 8px 3px 20px
+						text-decoration none
+
+						&.rss
+							background #EEE url("images/sprite.png") 0 -340px no-repeat
+							margin-right 100px
+
+						&.contact
+							background #EEE url("images/sprite.png") 0 -360px no-repeat
+
+						&:hover
+							background-color #DDD
+
+			ol
+
+				li
+					background-color #08C
+					font-size 1.1em
+					margin-right 0 !important
+					padding 10px 5px
+
+					a
+						color #FFF
+
+					& + li
+						background #1D95D1 !important
+						margin-right 15px !important
+
+						& + li
+							background 0 !important
+							margin-right 30px !important
+
+							& + li
+								background #56B0DC !important
+								margin-right 45px !important
+	
+								& + li
+									background #72BDE1 !important
+									margin-right 60px !important
+
+
+
+
+
+	&#secondary
+		clear right
+
+footer#footer
+	background #333
+	border-radius top 10px
+	color #FFF
+	clear both
+	font-size .9em
+	padding 10px
+	text-align center
+
+	a
+		color #FFF
+		text-decoration underline
+
+
+ // Ad Blocks
+ section#ad728
+	background #EEE
+	height 90px
+	margin 0 auto 10px
+	width 728px
+
+section#ad468
+	background #EEE
+	height 60px
+	margin 0 auto
+	width 468px
+
+section#ad300
+	background #EEE
+	height 250px
+	margin 0 auto
+	width 300px

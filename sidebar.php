@@ -1,5 +1,26 @@
 	<aside id="primary" class="sidebar">
 		<ul class="xoxo">
+			<li id="social">
+				<h3>S&iacute;guenos</h3>
+				<div class="fb-like"><fb:like href="http://www.facebook.com/pages/Xploit29-Tecnolog%C3%ADa-al-Alcance-de-tus-manos/198968303509866" send="false" width="288" show_faces="true"></fb:like></div>
+				<div class="twitter"><a href="https://twitter.com/ikcam" data-show-count="true" data-lang="es" class="twitter-follow-button">Seguir a @ikcam</a></div>
+				<div class="googleplus">
+					<div class="left"><g:plusone size="medium" href="<?php bloginfo('url') ?>"></g:plusone></div>
+					<div class="text">Recomendar <?php bloginfo('title') ?></div>
+				</div>
+				<div class="email">
+					<span><strong>xploit29 en tu email</strong></span>
+					<form class="email" action="http://www.feedburner.com/fb/a/emailverify" target="popupwindow" method="post" onsubmit="window.open('http://www.feedburner.com/fb/a/emailverifySubmit?feedId=1983204', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+						<input type="text" size="25" tabindex="1" class="text">
+						<input value="http://feeds.feedburner.com/~e?ffid=1983204" name="url" type="hidden"/>
+						<input value="xploit29" name="title" type="hidden"/><input value="es_ES" name="loc" type="hidden"/>
+						<input type="submit" value="Suscribirse" tabindex="2" class="button" />
+					</form>
+					<a href="<?php bloginfo('rss2_url') ?>" class="rss">RSS</a>
+					<a href="<?php bloginfo('home') ?>/contacto/" class="contact">Enviar pistas</a>
+				</div>
+			</li>
+
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(1) ) : // begin primary sidebar widgets ?>
 
 			<li id="pages">
@@ -25,6 +46,12 @@
 				</ul>
 			</li>
 <?php endif; // end primary sidebar widgets  ?>
+			<li class="ad">
+				<h3><?php _e( 'Ad', 'sandbox' ) ?></h3>
+				<section class="ad" id="ad300">
+					<?php include_once('ad/ad300.html') ?>
+				</section>
+			</li>
 		</ul>
 	</aside><!-- #primary .sidebar -->
 

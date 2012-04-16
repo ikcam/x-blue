@@ -11,25 +11,26 @@
 			</nav>
 
 			<article id="post-<?php the_ID() ?>" class="<?php sandbox_post_class() ?>">
+				<div class="entry-date"><div><?php the_time('j') ?><br /><?php the_time('M') ?></div></div>
 				<h2 class="entry-title"><?php the_title() ?></h2>
+				<div class="entry-meta-top">
+					<span class="author vcard"><?php printf( __( 'By %s', 'sandbox' ), '<a class="url fn n" href="' . get_author_link( false, $authordata->ID, $authordata->user_nicename ) . '" title="' . sprintf( __( 'View all posts by %s', 'sandbox' ), $authordata->display_name ) . '">' . get_the_author() . '</a>' ) ?></span>
+					<span class="cat-links"><?php printf( __( 'Posted in %s', 'sandbox' ), get_the_category_list(', ') ) ?></span>
+				</div>
 				<div class="entry-content">
 <?php the_content() ?>
 
 <?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'sandbox' ) . '&after=</div>') ?>
+<?php the_tags( __( '<span class="tag-links">Tagged ', 'sandbox' ), " ", " " ) ?>
 				</div>
 				<div class="entry-meta">
-					<?php printf( __( 'This entry was written by %1$s, posted on <abbr class="published" title="%2$sT%3$s">%4$s at %5$s</abbr>, filed under %6$s%7$s. Bookmark the <a href="%8$s" title="Permalink to %9$s" rel="bookmark">permalink</a>. Follow any comments here with the <a href="%10$s" title="Comments RSS to %9$s" rel="alternate" type="application/rss+xml">RSS feed for this post</a>.', 'sandbox' ),
-						'<span class="author vcard"><a class="url fn n" href="' . get_author_link( false, $authordata->ID, $authordata->user_nicename ) . '" title="' . sprintf( __( 'View all posts by %s', 'sandbox' ), $authordata->display_name ) . '">' . get_the_author() . '</a></span>',
-						get_the_time('Y-m-d'),
-						get_the_time('H:i:sO'),
-						the_date( '', '', '', false ),
-						get_the_time(),
-						get_the_category_list(', '),
-						get_the_tag_list( __( ' and tagged ', 'sandbox' ), ', ', '' ),
-						get_permalink(),
-						the_title_attribute('echo=0'),
-						comments_rss() ) ?>
-
+					<div class="social-buttons">
+						<div><fb:like href="<?php the_permalink() ?>" send="false" layout="button_count" width="100" show_faces="false"></fb:like></div>
+						<div><a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink() ?>" data-text="<?php the_title() ?>" data-count="none" data-via="xploit29" data-lang="es">Twittear</a></div>
+						<div><g:plusone size="medium" href="<?php the_permalink() ?>"></g:plusone></div>
+					</div>
+					<div class="right">
+<?php edit_post_link( __( 'Edit', 'sandbox' ), "\n\t\t\t\t\t<span class=\"edit-link\">", "</span>" ) ?>
 <?php if ( ('open' == $post->comment_status) && ('open' == $post->ping_status) ) : // Comments and trackbacks open ?>
 					<?php printf( __( '<a class="comment-link" href="#respond" title="Post a comment">Post a comment</a> or leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'sandbox' ), get_trackback_url() ) ?>
 <?php elseif ( !('open' == $post->comment_status) && ('open' == $post->ping_status) ) : // Only trackbacks open ?>
@@ -39,10 +40,13 @@
 <?php elseif ( !('open' == $post->comment_status) && !('open' == $post->ping_status) ) : // Comments and trackbacks closed ?>
 					<?php _e( 'Both comments and trackbacks are currently closed.', 'sandbox' ) ?>
 <?php endif; ?>
-<?php edit_post_link( __( 'Edit', 'sandbox' ), "\n\t\t\t\t\t<span class=\"edit-link\">", "</span>" ) ?>
-
+					</div>
 				</div>
 			</article><!-- .post -->
+
+			<section class="ad" id="ad468">
+				<!-- Insert Ad code 468x60 -->
+			</section>
 
 			<nav id="nav-below" class="navigation">
 				<div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">&laquo;</span> %title' ) ?></div>
@@ -50,6 +54,10 @@
 			</nav>
 
 <?php comments_template() ?>
+
+			<section class="ad" id="ad468">
+				<?php include_once( 'ad/ad468.html' ) ?>
+			</section>
 
 		</section><!-- #content -->
 	</section><!-- #container -->

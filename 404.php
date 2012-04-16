@@ -16,6 +16,11 @@
 				</form>
 			</article><!-- .post -->
 
+			<section class="ad" id="ad468">
+				<?php include_once( 'ad/ad468.html' ) ?>
+			</section>
+
+
 		</section><!-- #content -->
 	</section><!-- #container -->
 

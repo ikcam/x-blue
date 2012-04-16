@@ -6,7 +6,7 @@
 	<!-- Facebook Open Graph -->
 	<meta property="og:site_name" content="<?php bloginfo('name') ?>" />
 	<meta property="og:type" content="website" />
-	<meta property="fb:app_id" content="" /><!-- Your Custom User ID or App ID -->
+	<meta property="fb:app_id" content="185302781504837" /><!-- Your Custom User ID or App ID -->
 <?php if( is_single() ) { ?>
 	<!-- Is Single -->
 	<!-- Facebook Open Graph -->
@@ -36,6 +36,7 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>" />
+	<link rel="shortcut icon" href="<?php bloginfo('template_directory') ?>/favicon.ico" />
 
 	<!-- RSS & Pingback -->
 	<link rel="alternate" href="<?php bloginfo('rss2_url') ?>" title="<?php printf( __( '%s latest posts', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
@@ -46,19 +47,73 @@
 <!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+	<script>
+		window.___gcfg = {lang: 'es-419'};
+		(function() {
+			var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			po.src = 'https://apis.google.com/js/plusone.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		})();
+	</script><!-- Google Plus Script -->
+	<script>
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+	</script><!-- Twitter Script -->
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-3133670-9']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script><!-- Google Analytics -->
 <?php wp_head() // For plugins ?>
 </head>
 
 <body class="<?php sandbox_body_class() ?>">
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=185302781504837";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<section id="nav-top">
+	<section id="wrapper">
+		<div id="breadcrumb">
+<?php
+	if(function_exists('bcn_display')) { ?>
+			<strong>Est&aacute;s viendo: </strong> <?php bcn_display(); ?>
+<?php } ?>
+		</div>
+
+		<div id="rss">
+			<a href="<?php bloginfo('rss2_url') ?>" rel="alternative">Entradas</a>
+			<a href="<?php bloginfo('comments_rss2_url') ?>" rel="alternative">Comentarios</a>
+		</div>
+	</section>
+</section>
 
 <section id="wrapper" class="hfeed">
 
 	<header id="header">
-		<h1 id="blog-title"><span><a href="<?php bloginfo('home') ?>/" title="<?php echo wp_specialchars( get_bloginfo('name'), 1 ) ?>" rel="home"><?php bloginfo('name') ?></a></span></h1>
-		<div id="blog-description"><?php bloginfo('description') ?></div>
+		<h1 id="blog-title"><a href="<?php bloginfo('home') ?>/" title="<?php echo wp_specialchars( get_bloginfo('name'), 1 ) ?>" rel="home"><img src="<?php bloginfo('template_directory') ?>/images/logo.png" width="300" height="75" alt="<?php echo wp_specialchars( get_bloginfo('name'), 1 ) ?>" /></a></h1>
 	</header><!--  #header -->
 
 	<section id="access">
-		<div class="skip-link"><a href="#content" title="<?php _e( 'Skip to content', 'sandbox' ) ?>"><?php _e( 'Skip to content', 'sandbox' ) ?></a></div>
 		<?php sandbox_globalnav() ?>
+		<form method="get" id="search" action="<?php echo get_settings('home'); ?>">
+			<input class="text" id="s" name="s" type="text" value="<?php the_search_query() ?>" tabindex="1" />
+			<input class="button" type="submit" value="Buscar" tabindex="2" />
+		</form>
 	</section><!-- #access -->
+
+	<section class="ad" id="ad728">
+		<?php include_once( 'ad/ad728.html' ) ?>
+	</section>

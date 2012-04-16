@@ -26,6 +26,10 @@ Template Name: Links Page
 
 <?php if ( get_post_custom_values('comments') ) comments_template() // Add a key/value of "comments" to enable comments on pages! ?>
 
+			<section class="ad" id="ad468">
+				<?php include_once( 'ad/ad468.html' ) ?>
+			</section>
+
 		</section><!-- #content -->
 	</section><!-- #container -->
 
