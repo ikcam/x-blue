@@ -17,7 +17,7 @@
 	* Modify the `sidebar.php`
 		* Change your **Facebook Like Page URL**
 		* Change to your **Twitter** account
-* On the folder `ad` you will find **3 ad blocks**. Place your ad code inside of them.
+	* On the folder `ad` you will find **3 ad blocks**. Place your ad code inside of them.
 * Enjoy and feel free to modify the theme in every way you want to.
 
 ## For the Future ##
