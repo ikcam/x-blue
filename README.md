@@ -3,22 +3,22 @@
 
 * Facebook Open Graph and Google+
 	* Automatically gets a post image and use it as **image** for Facebook or Google+.
-	* Use the post excerpt of the post as **description**.
-* Adds **Twitter**, **Google+** and **Facebook** share button on every post.
-* All gradients are created by [Stylus](https://github.com/LearnBoost/stylus) using [Nib](https://github.com/visionmedia/nib) and [node-canvas](https://github.com/learnboost/node-canvas)
-	* **ALERT** You **WON'T** be able to re-compile the ´style.styl´ file on **Windows**, you **ONLY** can do it on **MacOS** or **Linux** because you require [cairo graphics library](http://cairographics.org/download/)
+	* Use the post excerpt as **description**.
+* **Twitter**, **Google+** and **Facebook** share button on every post.
+* All gradients are created by CSS. I've use [Stylus](https://github.com/LearnBoost/stylus), [Nib](https://github.com/visionmedia/nib) and [node-canvas](https://github.com/learnboost/node-canvas)
+	* **ALERT** You **WON'T** be able to compile the ´style.styl´ file on **Windows**, you **ONLY** can do it on **MacOS** or **Linux** because you require [cairo graphics library](http://cairographics.org/download/). If you want to compile it on **Windows** you will need to remove all the `linear-gradient-image()`
 * Order lists on the sidebar looks great (**use a order list only of 5 elements**)
 * Uses `wordpress.styl` from [stylus-boilerplate](https://github.com/neojp/stylus-boilerplate)
 
 ## Installation ##
 * You need to download the theme and upload it into your `wp-content/themes` folder
-* Active it in your WordPress Admin Panel
 * **You need to modify/add this:**
 	* Add your Facebook AppID at **line 9** and **line 71** of the `header.php`
 	* Modify the `sidebar.php`
 		* Change your **Facebook Like Page URL**
 		* Change to your **Twitter** account
 	* On the folder `ad` you will find **3 ad blocks**. Place your ad code inside of them.
+* Active it in your WordPress Admin Panel
 * Enjoy and feel free to modify the theme in every way you want to.
 
 ## Compile style.styl ##
