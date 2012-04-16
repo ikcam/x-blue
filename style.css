@@ -1,13 +1,3 @@
-/*
-THEME NAME: X-Blue
-THEME URI: https://github.com/ikcam/x-blue
-DESCRIPTION: X-Blue is a WordPress Theme based on my customize version of SandBox in HTML5
-VERSION: 0.9
-AUTHOR: <a href="http://ikcam.com/">Irving Kcam</a>
-AUTHOR URI: http://ikcam.com
-TAGS: white, microformats, fixed-width, flexible-width, two-columns, right-sidebar, facebook, twitter, google
-*/
-
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-family:inherit;font-size:100%;vertical-align:baseline}
 body{line-height:1;color:#000;background:#fff}
 ol,ul{list-style:none}
@@ -85,11 +75,11 @@ section#container section#content span.comments-link,section#container section#c
 section#container section#content span.edit-link{background:url("images/sprite.png") 0 -300px no-repeat;margin-right:10px}
 section#container section#content nav.navigation{padding:10px 0;}
 section#container section#content nav.navigation:after{clear:both;content:'.';display:block;height:0;visibility:hidden}
-section#container section#content nav.navigation div.nav-previous a,section#container section#content nav.navigation div.nav-next a{background:#39f;border-bottom:2px solid #ccc;color:#fff;display:inline-block;padding:3px 8px;}
+section#container section#content nav.navigation div.nav-previous a,section#container section#content nav.navigation div.nav-next a{background:#39f;border-bottom:2px solid #ccc;color:#fff;display:inline-block;padding:3px 8px;text-decoration:none;}
 section#container section#content nav.navigation div.nav-previous a:hover,section#container section#content nav.navigation div.nav-next a:hover{border-bottom:2px solid #999}
 section#container section#content nav.navigation div.nav-previous{float:left;}
 section#container section#content nav.navigation div.nav-previous a{border-left:2px solid #ccc;-moz-border-radius-topleft:5px;-webkit-border-top-left-radius:5px;-o-border-top-left-radius:5px;-ms-border-top-left-radius:5px;border-top-left-radius:5px;-moz-border-radius-bottomleft:5px;-webkit-border-bottom-left-radius:5px;-o-border-bottom-left-radius:5px;-ms-border-bottom-left-radius:5px;border-bottom-left-radius:5px;}
-section#container section#content nav.navigation div.nav-previous a:hover{border-right:2px solid #999}
+section#container section#content nav.navigation div.nav-previous a:hover{border-left:2px solid #999}
 section#container section#content nav.navigation div.nav-next{float:right;}
 section#container section#content nav.navigation div.nav-next a{border-right:2px solid #ccc;-moz-border-radius-topright:5px;-webkit-border-top-right-radius:5px;-o-border-top-right-radius:5px;-ms-border-top-right-radius:5px;border-top-right-radius:5px;-moz-border-radius-bottomright:5px;-webkit-border-bottom-right-radius:5px;-o-border-bottom-right-radius:5px;-ms-border-bottom-right-radius:5px;border-bottom-right-radius:5px;}
 section#container section#content nav.navigation div.nav-next a:hover{border-right:2px solid #999}
@@ -135,7 +125,7 @@ aside.sidebar > ul > li#social div.email a:hover{background-color:#ddd}
 aside.sidebar > ul > li ol li{background-color:#08c;font-size:1.1em;margin-right:0 !important;padding:10px 5px;}
 aside.sidebar > ul > li ol li a{color:#fff}
 aside.sidebar > ul > li ol li + li{background:#1d95d1 !important;margin-right:15px !important;}
-aside.sidebar > ul > li ol li + li + li{background:0 !important;margin-right:30px !important;}
+aside.sidebar > ul > li ol li + li + li{background:#39a3d7 !important;margin-right:30px !important;}
 aside.sidebar > ul > li ol li + li + li + li{background:#56b0dc !important;margin-right:45px !important;}
 aside.sidebar > ul > li ol li + li + li + li + li{background:#72bde1 !important;margin-right:60px !important}
 aside.sidebar#secondary{clear:right}
