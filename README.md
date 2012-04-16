@@ -1,5 +1,5 @@
 # X-Blue WordPress Theme #
-This is **X-Blue**, a [WordPress](http://www.wordpress.org/) Theme based on my customize version of [SandBox in HTML5](https://github.com/ikcam/Sandbox-HTML5), wich I've improved by adding:
+**X-Blue** is a [WordPress](http://www.wordpress.org/) Theme based on my customize version of [SandBox in HTML5](https://github.com/ikcam/Sandbox-HTML5), wich I've improved by adding:
 
 * Facebook Open Graph and Google+
 	* Automatically gets a post image and use it as **logo** for Facebook.
