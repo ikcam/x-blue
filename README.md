@@ -7,7 +7,7 @@
 * Adds **Twitter**, **Google+** and **Facebook** share button on every post.
 * All gradients are created by [Stylus](https://github.com/LearnBoost/stylus) using [Nib](https://github.com/visionmedia/nib) and [node-canvas](https://github.com/learnboost/node-canvas)
 	* **ALERT** You **WON'T** be able to re-compile the style.styl file on **Windows**, you **ONLY** can do it on **MacOS** or **Linux** because you require [cairo graphics library](http://cairographics.org/download/)
-* Includes
+* Order lists on the sidebar looks great (**use a order list only of 5 elements**)
 
 ## Installation ##
 * You need to download the theme and upload it into your `wp-content/themes` folder
