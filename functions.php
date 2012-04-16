@@ -524,6 +524,7 @@ add_filter( 'archive_meta', 'wpautop' );
 // Remember: the Sandbox is for play.
 
 add_theme_support( 'post-thumbnails' );
+add_image_size( 'post-thumb', 120, 120, false );
 
 function post_description(){
 	$my_id = get_the_ID();
@@ -557,5 +558,44 @@ function post_image(){
 	} else {
 		echo $post_image;
 	}
+}
+
+function sandbox_excerpt($text) {
+	if ( has_post_thumbnail() ) {
+		$thumb = get_the_post_thumbnail($post->ID, 'post-thumb');
+	} else {
+		$attachments = get_children( array(
+			'post_parent'    => get_the_ID(),
+			'post_type'      => 'attachment',
+			'numberposts'    => 1, // show all -1
+			'post_status'    => 'inherit',
+			'post_mime_type' => 'image',
+			'order'          => 'DESC',
+			'orderby'        => 'menu_order DESC'
+		) );
+		foreach ( $attachments as $attachment_id => $attachment ) {
+			$thumb = wp_get_attachment_image( $attachment_id, 'post-thumb'); 
+		}
+	}
+
+	$raw_excerpt = $text;
+	if ( '' == $text ) {
+		$text = get_the_content('');
+		$text = strip_shortcodes( $text );
+		$text = apply_filters('the_content', $text);
+		$text = str_replace(']]>', ']]&gt;', $text);
+		$text = strip_tags($text);
+		$excerpt_length = apply_filters('excerpt_length', 80); // Word limit
+		$excerpt_more = apply_filters('excerpt_more', ' ' . '... <div class="read-more"><a href="'. get_permalink($post->ID) . '">Continuar leyendo <span class="meta-nav">&raquo;</span></a></div>'); // "Read more" link
+		$words = preg_split("/[\n\r\t ]+/", $text, $excerpt_length + 1, PREG_SPLIT_NO_EMPTY);
+		if ( count($words) > $excerpt_length ) {
+			array_pop($words);
+			$text = implode(' ', $words);
+			$text = $thumb . $text . $excerpt_more;
+		} else {
+			$text = $thumb . implode(' ', $words);
+		}
+	}
+	return apply_filters('sandbox_excerpt', $text, $raw_excerpt);
 }
 ?>
