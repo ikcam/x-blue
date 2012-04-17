@@ -1,12 +1,3 @@
-/*
-THEME NAME: X-Blue
-THEME URI: https://github.com/ikcam/x-blue
-DESCRIPTION: X-Blue is a WordPress Theme based on my customize version of SandBox in HTML5
-VERSION: 0.9
-AUTHOR: <a href="http://ikcam.com/">Irving Kcam</a>
-AUTHOR URI: http://ikcam.com
-TAGS: white, microformats, fixed-width, flexible-width, two-columns, right-sidebar, facebook, twitter, google
-*/
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-family:inherit;font-size:100%;vertical-align:baseline}
 body{line-height:1;color:#000;background:#fff}
 ol,ul{list-style:none}
@@ -132,7 +123,7 @@ aside.sidebar > ul > li#social div.email{text-align:center;}
 aside.sidebar > ul > li#social div.email form{margin-bottom:10px;}
 aside.sidebar > ul > li#social div.email form input[type="submit"]{background:#39f;-moz-border-radius-topright:5px;-webkit-border-top-right-radius:5px;-o-border-top-right-radius:5px;-ms-border-top-right-radius:5px;border-top-right-radius:5px;-moz-border-radius-bottomright:5px;-webkit-border-bottom-right-radius:5px;-o-border-bottom-right-radius:5px;-ms-border-bottom-right-radius:5px;border-bottom-right-radius:5px;border:none;border-right:solid 2px #ccc;border-bottom:solid 2px #ccc;color:#fff;font-weight:bold;}
 aside.sidebar > ul > li#social div.email form input[type="submit"]:hover{border:none;border-right:solid 2px #999;border-bottom:solid 2px #999}
-aside.sidebar > ul > li#social div.email a{border:solid 1px #ccc;display:inline-block;color:#666;padding:3px 8px 3px 20px;text-decoration:none;}
+aside.sidebar > ul > li#social div.email a{border:solid 1px #ccc;display:inline-block;color:#666;line-height:100%;padding:3px 8px 3px 20px;text-decoration:none;}
 aside.sidebar > ul > li#social div.email a.rss{background:#eee url("images/sprite.png") 0 -340px no-repeat;margin-right:100px}
 aside.sidebar > ul > li#social div.email a.contact{background:#eee url("images/sprite.png") 0 -360px no-repeat}
 aside.sidebar > ul > li#social div.email a:hover{background-color:#ddd}
