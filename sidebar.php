@@ -16,7 +16,7 @@
 						<input value="xploit29" name="title" type="hidden"/><input value="<?php language_attributes() ?>" name="loc" type="hidden"/>
 						<input type="submit" value="<?php _e( 'Subscribe', 'sandbox' ) ?>" tabindex="2" class="button" />
 					</form>
-					<a href="<?php bloginfo('rss2_url') ?>" class="rss"><?php ( 'RSS', 'sandbox' ) ?></a>
+					<a href="<?php bloginfo('rss2_url') ?>" class="rss"><?php _e( 'RSS', 'sandbox' ) ?></a>
 					<a href="<?php bloginfo('home') ?>/contacto/" class="contact"><?php _e( 'Send Hint', 'sandbox' ) ?></a>
 				</div>
 			</li>
