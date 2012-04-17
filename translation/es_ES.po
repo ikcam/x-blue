@@ -324,6 +324,34 @@ msgstr "Tema Sandbox para WordPress"
 msgid "Sandbox"
 msgstr "Sandbox"
 
+#: functions.php:4
+msgid "Follow Us"
+msgstr "Síguenos"
+
+#: functions.php:6
+msgid "Follow"
+msgstr "Seguir a"
+
+#: functions.php:9
+msgid "Recommend"
+msgstr "Recomendar"
+
+#: functions.php:12
+msgid "on your email"
+msgstr "en tu e-mail"
+
+#: functions.php:17
+msgid "Subscribe"
+msgstr "Suscribirse"
+
+#: functions.php:19
+msgid "RSS"
+msgstr "RSS"
+
+#: functions.php:20
+msgid "Send Hint"
+msgstr "Enviar Pista"
+
 #: functions.php:21
 msgid "Home"
 msgstr "Inicio"
