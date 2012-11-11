@@ -601,4 +601,7 @@ function sandbox_excerpt($text) {
 
 remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 add_filter( 'get_the_excerpt', 'sandbox_excerpt');
+
+/* COMENTARIO DE PRUEBA */
+
 ?>
