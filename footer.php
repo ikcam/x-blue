@@ -7,11 +7,11 @@
 		<span id="theme-link">Improved by <a href="http://ikcam.com" title="Irving Kcam">@iKcam</a>
 		<span class="meta-sep">|</span>
 		<span id="theme-link"><a href="https://github.com/ikcam/x-blue" rel="GitHub">GitHub</a></span>	
+		<?php wp_footer() ?>
 	</footer><!-- #footer -->
 
 </section><!-- #wrapper .hfeed -->
 
-<?php wp_footer() ?>
 
 </body>
 </html>
