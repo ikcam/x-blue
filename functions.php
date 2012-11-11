@@ -604,7 +604,5 @@ add_filter( 'get_the_excerpt', 'sandbox_excerpt');
 
 /* COMENTARIO DE PRUEBA 2 */
 /* COMENTARIO DE PRUEBA 2 */
-/* COMENTARIO DE PRUEBA 2 */
-/* COMENTARIO DE PRUEBA 2 */
 
 ?>
